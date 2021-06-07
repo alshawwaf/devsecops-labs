@@ -51,7 +51,7 @@ pipeline {
          steps {
             parallel(
                   app:  {
-                        sh '''
+                        sh '''''
 
                               mv ${WORKSPACE}/target/${GIT_COMMIT}.war ${WORKSPACE}/target/ROOT.war
                               docker build --no-cache -t "devsecops/app:staging" -f docker/app/Dockerfile .
